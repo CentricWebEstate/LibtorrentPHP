@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="false"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         syntaxCheck="false"
+         bootstrap="vendor/autoload.php"
+>
+    <testsuites>
+        <testsuite name="White box tests for PHPTracker">
+            <directory>./test/Whitebox/</directory>
+        </testsuite>
+        <testsuite name="Black box tests of PHPTracker">
+            <directory>./test/Blackbox/</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./lib/PHPTracker/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
