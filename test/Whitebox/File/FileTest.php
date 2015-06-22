@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPTracker\Test\Whitebox\File;
+namespace CWE\Libraries\LibtorrentPHP\Test\Whitebox\File;
 
-use PHPTracker\File\File;
+use CWE\Libraries\LibtorrentPHP\File\File;
 
 class FileTest extends \PHPUnit_Framework_TestCase
 {
@@ -45,7 +45,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PHPTracker\File\Error\NotExistsError
+     * @expectedException CWE\Libraries\LibtorrentPHP\File\Error\NotExistsError
      */
     public function testNonExistent()
     {
@@ -65,7 +65,7 @@ class FileTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PHPTracker\File\Error\UnreadableError
+     * @expectedException CWE\Libraries\LibtorrentPHP\File\Error\UnreadableError
      */
     public function testGetHashesForPiecesUnreadable()
     {

@@ -22,7 +22,7 @@
 
     <filter>
         <whitelist>
-            <directory suffix=".php">./lib/PHPTracker/</directory>
+            <directory suffix=".php">./src/LibtorrentPHP/</directory>
         </whitelist>
     </filter>
 </phpunit>

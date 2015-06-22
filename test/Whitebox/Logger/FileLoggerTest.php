@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPTracker\Test\Whitebox\Logger;
+namespace CWE\Libraries\LibtorrentPHP\Test\Whitebox\Logger;
 
-use PHPTracker\Logger\FileLogger;
+use CWE\Libraries\LibtorrentPHP\Logger\FileLogger;
 
 /**
  * Test class for PHPTracker\Logger\FileLogger.

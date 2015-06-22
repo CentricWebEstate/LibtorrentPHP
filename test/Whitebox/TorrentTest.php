@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPTracker\Test\Whitebox;
+namespace CWE\Libraries\LibtorrentPHP\Test\Whitebox;
 
-use PHPTracker\File\File;
-use PHPTracker\Torrent;
+use CWE\Libraries\LibtorrentPHP\File\File;
+use CWE\Libraries\LibtorrentPHP\Torrent;
 use CWE\Libraries\Bencode;
 
 /**
@@ -86,7 +86,7 @@ class TorrentTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PHPTracker\Error\BlockReadError
+     * @expectedException CWE\Libraries\LibtorrentPHP\Error\BlockReadError
      */
     public function testReadBlockNoPiece()
     {
@@ -95,7 +95,7 @@ class TorrentTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException PHPTracker\Error\BlockReadError
+     * @expectedException CWE\Libraries\LibtorrentPHP\Error\BlockReadError
      */
     public function testReadBlockTooLargeBlock()
     {

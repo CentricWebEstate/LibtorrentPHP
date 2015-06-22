@@ -1,22 +1,15 @@
 {
-    "name": "phptracker/phptracker",
+    "name": "centricwebestate/libtorrentphp",
     "type": "library",
-    "description": "PHP library to generate .torrent files, set up Bittorrent tracker server, and seed server too.",
     "keywords": ["php","library","bittorrent","torrent"],
-    "homepage": "http://php-tracker.org/",
-    "license": "BSD",
-    "authors": [
-        {
-            "name": "Zoltan Toth-Czifra",
-            "email": "phptracker@tcz.hu",
-            "homepage": "https://github.com/tcz"
-        }
-    ],
+    "license": "Artistic 2.0",
     "require": {
-        "php": ">=5.3",
+        "php": ">=5.5",
         "centricwebestate/bencode":"^1.1.1"
     },
     "autoload": {
-        "psr-0": { "PHPTracker": "lib/" }
+        "psr-4": {
+            "CWE\\Libraries\\LibtorrentPHP\\": "src/LibtorrentPHP"
+        }
     }
 }

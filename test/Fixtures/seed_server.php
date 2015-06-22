@@ -11,13 +11,12 @@ set_error_handler( function ( $errno, $errstr, $errfile = null, $errline = null 
     throw new Exception( "Error $errno: $errstr in $errfile:$errline" );
 } );
 
-require( __DIR__ . '/../../lib/PHPTracker/Autoloader.php' );
-PHPTracker\Autoloader::register();
+require( __DIR__ . '/../../vendor/autoload.php' );
 
-use PHPTracker\Persistence\SqlPersistence;
-use PHPTracker\Logger\StdErrLogger;
-use PHPTracker\Seeder\Peer;
-use PHPTracker\Seeder\Server;
+use CWE\Libraries\LibtorrentPHP\Persistence\SqlPersistence;
+use CWE\Libraries\LibtorrentPHP\Logger\StdErrLogger;
+use CWE\Libraries\LibtorrentPHP\Seeder\Peer;
+use CWE\Libraries\LibtorrentPHP\Seeder\Server;
 
 $ip     = $argv[1];
 $port   = $argv[2];

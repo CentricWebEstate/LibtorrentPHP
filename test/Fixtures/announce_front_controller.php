@@ -13,8 +13,8 @@ set_error_handler( function ( $errno, $errstr, $errfile = null, $errline = null 
 } );
 
 require( __DIR__ . '/../../vendor/autoload.php' );
-use PHPTracker\Persistence\SqlPersistence;
-use PHPTracker\Core;
+use CWE\Libraries\LibtorrentPHP\Persistence\SqlPersistence;
+use CWE\Libraries\LibtorrentPHP\Core;
 
 $persistence = new SqlPersistence(
     new PDO( 'sqlite:' . __DIR__ . '/sqlite_test.db' )

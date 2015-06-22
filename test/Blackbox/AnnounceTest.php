@@ -1,9 +1,9 @@
 <?php
 
-namespace PHPTracker\Test\Blackbox;
+namespace CWE\Libraries\LibtorrentPHP\Test\Blackbox;
 
-use PHPTracker\Persistence\SqlPersistence;
-use PHPTracker\Core;
+use CWE\Libraries\LibtorrentPHP\Persistence\SqlPersistence;
+use CWE\Libraries\LibtorrentPHP\Core;
 use CWE\Libraries\Bencode;
 
 class AnnounceTest extends \PHPUnit_Framework_TestCase

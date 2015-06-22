@@ -1,8 +1,8 @@
 <?php
 
-namespace PHPTracker\Test\Whitebox;
+namespace CWE\Libraries\LibtorrentPHP\Test\Whitebox;
 
-use PHPTracker\Autoloader;
+use CWE\Libraries\LibtorrentPHP\Autoloader;
 
 class AutoloaderTest extends \PHPUnit_Framework_TestCase
 {
